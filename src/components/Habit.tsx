@@ -15,7 +15,12 @@ interface HabitProps {
 //acessando ass props como parametro da função e mencionando o padrao HabitProps
 export function Habit(props: HabitProps) {
   //variavel se chama com chaves
-  return <div className='bg-stone-900/50 rounded m-8 p-6 items-center flex justify-center font-bold size-8 text-purple-500'>{props.completed}</div>
+  return (
+    <div
+      className='bg-stone-900/50 rounded m-8 p-6 items-center flex justify-center font-bold size-8 text-purple-500'
+        >{props.completed}
+    </div>
+  )
 
 
 }
